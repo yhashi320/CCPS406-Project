@@ -1104,7 +1104,7 @@
 					"target":"consumed",
 					"chocolate":"free"
 				},
-				"description_success":"You start popping grapes into your mouth and they burst with flavour. The juices are complex, vibrant, and you can't stop yourself from eating every last one.\nRight on cue, the bowl that had contained the grapes had transformed into a large pile of decadent chocolates."
+				"description_success":"You start popping grapes into your mouth and they burst with flavor. The juices are complex, vibrant, and you can't stop yourself from eating every last one.\nRight on cue, the bowl that had contained the grapes had transformed into a large pile of decadent chocolates."
 			},
 			"chocolate":{
 				"req_state":{
