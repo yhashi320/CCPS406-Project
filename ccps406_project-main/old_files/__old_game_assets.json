@@ -1,0 +1,420 @@
+{ 
+	"world_objects":{
+		"characters":[
+			{
+				"name":"Player",
+				"is_playable":true,
+				"starting_room":"Room 0",
+				"state":{
+					"init":{
+						"description":{
+							"long": "Chained to the floor. This sucks.",
+							"short": "Still stuck."
+						}
+					},
+					"free":{
+						"description":{
+							"long": "Just an average looking dude.",
+							"short": "Same as always."
+						}
+					},
+					"armed":{
+						"description":{
+							"long":"White-fisted holding the knife, he looks ready to strike at any moment.",
+							"short":"Holding a knife."
+						}
+					}
+				}
+			},
+			{
+				"name":"Enemy NPC",
+				"is_playable":false,
+				"starting_room":"Room 11",
+				"state":{
+					"init":{
+						"description":{
+							"long":"An evil looking dude.",
+							"short":"Somehow uglier than last time you checked."
+						}
+					},
+					"exploring":{
+						"description":{
+							"long":"An evil looking dude.",
+							"short":"Somehow uglier than last time you checked."
+						}
+					},
+					"pursuing":{
+						"description":{
+							"long":"An evil looking dude.",
+							"short":"Somehow uglier than last time you checked."
+						}
+					},
+					"threatening":{
+						"description":{
+							"long":"An evil looking dude.",
+							"short":"Somehow uglier than last time you checked."
+						}
+					},
+					"attacking":{
+						"description":{
+							"long":"An evil looking dude.",
+							"short":"Somehow uglier than last time you checked."
+						}
+					},
+					"unconscious":{
+						"description":{
+							"long":"An evil looking dude.",
+							"short":"Somehow uglier than last time you checked."
+						}
+					}
+				}
+			}
+		],
+		"items":[
+			{
+				"name":"knife",
+				"is_carryable":true,
+				"is_equippable":true,
+				"starting_room":"Room 1",
+				"state":{
+					"init":{
+						"description":{
+							"long":"A sharp, serrated hunting knife with a worn, yellow handle.",
+							"short":"Super sharp."
+						}
+					},
+					"equipped":{
+						"description":{
+							"long":"A sharp, serrated hunting knife with a worn, yellow handle.",
+							"short":"Super sharp."
+						}
+					}
+				}
+			},
+			{
+				"name":"book",
+				"is_carryable":true,
+				"is_equippable":false,
+				"starting_room":"Room 2",
+				"state":{
+					"init":{
+						"description":{
+							"long":"A brown, leather-bound book with some sort of archaic logo wrapping the entire cover.",
+							"short":"Upon closer inspection, the logo is some ornate version of a cross."
+						}
+					}
+				}
+			},
+			{
+				"name":"key",
+				"is_carryable":true,
+				"is_equippable":false,
+				"starting_room":"Room 3",
+				"state":{
+					"init":{
+						"description":{
+							"long":"A tiny, silver key with the word 'Ultrasafe' branded into it.",
+							"short":"An extremely small key."
+						}
+					}
+				}
+			}
+		],
+		"rooms":[
+			{
+				"name":"Room 0",
+				"state":{
+					"init":{
+							"long":"The room is dimly lit. \nYou can see hallways connecting to the east and south. \nA gate to the south is covered by a padlock with the word 'Ultrasafe' on it.",
+							"short":"small room."
+					}
+				},
+				"connections":{
+					"east":"Room 1",
+					"south":"Room 3"
+				}
+			},
+			{
+				"name":"Room 1",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"west":"Room 0",
+					"east":"Room 2",
+					"south":"Room 4"
+				}
+			},
+			{
+				"name":"Room 2",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"west":"Room 1",
+					"south":"Room 5"
+				}
+			},
+			{
+				"name":"Room 3",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 0",
+					"east":"Room 4",
+					"south":"Room 6"
+				}
+			},
+			{
+				"name":"Room 4",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 1",
+					"west":"Room 3",
+					"east":"Room 5",
+					"south":"Room 7"
+				}
+			},
+			{
+				"name":"Room 5",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 2",
+					"west":"Room 4",
+					"south":"Room 8"
+				}
+			},
+			{
+				"name":"Room 6",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 3",
+					"east":"Room 7",
+					"south":"Room 9"
+				}
+			},
+			{
+				"name":"Room 7",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 4",
+					"west":"Room 6",
+					"east":"Room 8",
+					"south":"Room 10"
+				}
+			},
+			{
+				"name":"Room 8",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 5",
+					"west":"Room 7",
+					"south":"Room 11"
+				}
+			},
+			{
+				"name":"Room 9",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 6",
+					"east":"Room 10"
+				}
+			},
+			{
+				"name":"Room 10",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 7",
+					"west":"Room 9",
+					"east":"Room 11"
+				}
+			},
+			{
+				"name":"Room 11",
+				"state":{
+					"init":{
+							"long":"TBD",
+							"short":"TBD"
+					}
+				},
+				"connections":{
+					"north":"Room 8",
+					"west":"Room 10"
+				}
+			}
+		]
+	},
+	"actions":{
+		"describe":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"move":[
+			{
+				"north":{
+					"actor_name":null,
+					"target_name":null,
+					"req_state":{
+						"actor":["free","armed"],
+						"target":null
+					},
+					"next_state":{
+						"actor":null,
+						"target":null
+					},
+					"description_success":null
+				},
+				"east":{
+					"actor_name":null,
+					"target_name":null,
+					"req_state":{
+						"actor":["free","armed"],
+						"target":null
+					},
+					"next_state":{
+						"actor":null,
+						"target":null
+					},
+					"description_success":null
+				},
+				"west":{
+					"actor_name":null,
+					"target_name":null,
+					"req_state":{
+						"actor":["free","armed"],
+						"target":null
+					},
+					"next_state":{
+						"actor":null,
+						"target":null
+					},
+					"description_success":null
+				},
+				"south":{
+					"actor_name":null,
+					"target_name":null,
+					"req_state":{
+						"actor":["free","armed"],
+						"target":null
+					},
+					"next_state":{
+						"actor":null,
+						"target":null
+					},
+					"description_success":null
+				}
+			}
+		],
+		"pickup":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"drop":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"equip":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"push":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"pull":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"open":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"close":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"unlock":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		},
+		"attack":{
+			"actor_name":null,
+			"target_name":null,
+			"req_state":{},
+			"next_state":{},
+			"description_success":null
+		}
+	}
+}
